@@ -1,0 +1,23 @@
+{
+  "name": "file-metadata",
+  "version": "1.0.0",
+  "description": "returns a file size in bytes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amashamdan/file-metadata.git"
+  },
+  "author": "Amer Hamdan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amashamdan/file-metadata/issues"
+  },
+  "homepage": "https://github.com/amashamdan/file-metadata#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
