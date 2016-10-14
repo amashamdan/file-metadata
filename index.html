@@ -33,11 +33,14 @@
 </head>
 <body>
 	<div class="container">
-		<h3>Image Search Abstraction Layer</h3>
+		<h3>File Metadata Microservice</h3>
 		<p>Please enter a file path or browse for one, then upload it to see it size.</p>
-		<form class="form">
-			<input class="form-input" placeholder="Please select a file" type="file">
-			<button class="button">Upload</button>
+		<form class="form" enctype="multipart/form-data" action="/upload" method="post">
+			<!-- type="file" is necessary to add browse button"
+			name="uploadedFile" is necessary in server.js in app.post -->
+			<input class="form-input" placeholder="Please select a file" type="file" name="uploadedFile">
+			<!-- value="Upload File" doesn't seem to affect functionality at this point. -->
+			<button class="button" value="Upload File">Upload</button>
 		</form>
 		</div>
 		<hr/>
